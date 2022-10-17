@@ -5,13 +5,16 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     private int puntos;
+    private int vidas;
     [SerializeField] TMPro.TextMeshProUGUI HUD;
 
     // Start is called before the first frame update
     void Start()
     {
         puntos = 0;
-        HUD.text = "Puntos: " + puntos;
+        vidas = 3;
+        HUD.text = "Puntos: " + puntos + "\n" +
+            "Vidas: " + vidas;
     }
 
     // Update is called once per frame
@@ -23,6 +26,20 @@ public class GameController : MonoBehaviour
     public void AnotarItemRecogido()
     {
         puntos += 10;
-        HUD.text = "Puntos: " + puntos;
+        HUD.text = "Puntos: " + puntos + "\n" +
+            "Vidas: " + vidas;
+    }
+
+    public void PerderVida()
+    {
+        vidas--;
+        HUD.text = "Puntos: " + puntos + "\n" +
+            "Vidas: " + vidas;
+        FindObjectOfType<Player>().SendMessage("ResetPosition");
+        
+        if (vidas <= 0)
+        {
+            //Pantalla de GameOver -> volver al menu principal
+        }
     }
 }

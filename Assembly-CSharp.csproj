@@ -58,9 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\EdgeBottom.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\EnemyFly.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\EnemyFly.cs" />
+    <Compile Include="Assets\Scripts\Key.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

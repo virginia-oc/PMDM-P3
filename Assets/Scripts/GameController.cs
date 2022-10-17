@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     private int itemsRestantes;
     private int nivelActual;
     [SerializeField] TMPro.TextMeshProUGUI HUD;
+    [SerializeField] TMPro.TextMeshProUGUI textoGameOver;
     [SerializeField] Transform prefabKey;
 
     // Start is called before the first frame update
@@ -19,6 +20,8 @@ public class GameController : MonoBehaviour
         puntos = FindObjectOfType<GameStatus>().puntos;
         vidas = FindObjectOfType<GameStatus>().vidas;
         nivelActual = FindObjectOfType<GameStatus>().nivelActual;
+        textoGameOver.enabled = false;
+        textoGameOver.text = "Game Over";
         HUD.text = "Puntos: " + puntos + "\n" +
             "Vidas: " + vidas;
     }
@@ -56,7 +59,7 @@ public class GameController : MonoBehaviour
         
         if (vidas <= 0)
         {
-            //Pantalla de GameOver -> volver al menu principal
+            TerminarPartida();
         }
     }
 
@@ -71,5 +74,19 @@ public class GameController : MonoBehaviour
 
         FindObjectOfType<GameStatus>().nivelActual = nivelActual;
         SceneManager.LoadScene("Level"+nivelActual);
+    }
+
+    private void TerminarPartida()
+    {
+        StartCoroutine(VolverAlMenuPrincipal());
+    }
+
+    private IEnumerator VolverAlMenuPrincipal()
+    {
+        textoGameOver.enabled = true;
+        Time.timeScale = 0.1f;
+        yield return new WaitForSecondsRealtime(3f);
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Menu");
     }
 }

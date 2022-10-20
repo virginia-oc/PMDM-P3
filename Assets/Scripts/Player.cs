@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     private float xInicial, yInicial;
     private float alturaPlayer;
     private Animator anim;
+    private AudioSource sonido;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour
         yInicial = transform.position.y;
         alturaPlayer = GetComponent<Collider2D>().bounds.size.y;
         anim = gameObject.GetComponent<Animator>();
+        sonido = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,7 +49,10 @@ public class Player : MonoBehaviour
             {
                 Vector3 fuerzaSalto = new Vector3(0, velocidadSalto, 0);
                 GetComponent<Rigidbody2D>().AddForce(fuerzaSalto);
-            }
+
+                AudioSource.PlayClipAtPoint(sonido.clip,
+                        Camera.main.transform.position);           
+            }           
         }
 
         if (tocandoSuelo == false)

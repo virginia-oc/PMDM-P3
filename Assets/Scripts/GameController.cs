@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
         textoGameOver.text = "Game Over";
         HUD.text = "Puntos: " + puntos + "\n" +
             "Vidas: " + vidas;
+        prefabKey.GetComponent<SpriteRenderer>().enabled = false;       
     }
 
     // Update is called once per frame
@@ -40,8 +41,7 @@ public class GameController : MonoBehaviour
         
         if (itemsRestantes <= 0)
         {
-            Vector3 position = new Vector3(6.11f, -1.82f, 0f);
-            Transform key = Instantiate(prefabKey, position, Quaternion.identity);
+            prefabKey.GetComponent<SpriteRenderer>().enabled = true;          
         }
 
         HUD.text = "Puntos: " + puntos + "\n" +

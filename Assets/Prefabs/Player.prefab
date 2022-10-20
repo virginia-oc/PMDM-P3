@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2
-  velocidadSalto: 2
+  velocidadSalto: 1.5
 --- !u!95 &8416056713340485899
 Animator:
   serializedVersion: 4

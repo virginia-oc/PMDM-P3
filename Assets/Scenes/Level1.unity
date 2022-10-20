@@ -2793,7 +2793,7 @@ MonoBehaviour:
   puntos: 0
   vidas: 3
   nivelActual: 1
-  nivelMasAlto: 2
+  nivelMasAlto: 3
 --- !u!4 &1977402186
 Transform:
   m_ObjectHideFlags: 0
@@ -2822,11 +2822,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.336102
+      value: 23.3
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.464182
+      value: 3.27
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3276,11 +3276,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 519420032, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.880778
+      value: 6.088327
       objectReference: {fileID: 0}
     - target: {fileID: 519420032, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.003700018
+      value: -0.0036200285
       objectReference: {fileID: 0}
     - target: {fileID: 1713588299604222812, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_Name
@@ -3391,6 +3391,10 @@ PrefabInstance:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 1271865687}
+    - target: {fileID: 8697574406767607967, guid: ce6b3443db4c5a547bc3c38ca7fbb2ce, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 306801388}
     - target: {fileID: 8697574406767607967, guid: ce6b3443db4c5a547bc3c38ca7fbb2ce, type: 3}
       propertyPath: prefabKey
       value: 

@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     private int itemsRestantes;
     private int nivelActual;
     [SerializeField] TMPro.TextMeshProUGUI HUD;
-    [SerializeField] TMPro.TextMeshProUGUI textoGameOver;
+    [SerializeField] TMPro.TextMeshProUGUI texto;
     [SerializeField] Transform prefabKey;
 
     // Start is called before the first frame update
@@ -20,8 +20,8 @@ public class GameController : MonoBehaviour
         puntos = FindObjectOfType<GameStatus>().puntos;
         vidas = FindObjectOfType<GameStatus>().vidas;
         nivelActual = FindObjectOfType<GameStatus>().nivelActual;
-        textoGameOver.enabled = false;
-        textoGameOver.text = "Game Over";
+        texto.enabled = false;
+        texto.text = "Game Over";
         HUD.text = "Puntos: " + puntos + "\n" +
             "Vidas: " + vidas;
         prefabKey.GetComponent<SpriteRenderer>().enabled = false;       
@@ -65,15 +65,22 @@ public class GameController : MonoBehaviour
 
     private void AvanzarNivel()
     {
+        Debug.Log(nivelActual);
         nivelActual++;
-
+        Debug.Log(nivelActual);
+        Debug.Log(FindObjectOfType<GameStatus>().nivelMasAlto);
         if (nivelActual > FindObjectOfType<GameStatus>().nivelMasAlto)
         {
+            texto.text = "Fin";
             nivelActual = 1;
+            TerminarPartida();
         }
-
-        FindObjectOfType<GameStatus>().nivelActual = nivelActual;
-        SceneManager.LoadScene("Level"+nivelActual);
+        else
+        {
+            FindObjectOfType<GameStatus>().nivelActual = nivelActual;
+            SceneManager.LoadScene("Level" + nivelActual);
+        }
+        
     }
 
     private void TerminarPartida()
@@ -83,7 +90,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator VolverAlMenuPrincipal()
     {
-        textoGameOver.enabled = true;
+        texto.enabled = true;
         Time.timeScale = 0.1f;
         yield return new WaitForSecondsRealtime(3f);
         Time.timeScale = 1;

@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
     {
         if (FindObjectsOfType<GameStatus>().Length > 0)
         {     
-            FindObjectOfType<GameStatus>().SendMessage("Destructor");
+            FindObjectOfType<GameStatus>().SendMessage("ReseteaStatus");
         }
     }
 

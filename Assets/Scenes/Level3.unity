@@ -1770,11 +1770,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8029650996661931840, guid: 354fb1d98c09e374ca914ae1ade6aa70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.93
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 8029650996661931840, guid: 354fb1d98c09e374ca914ae1ade6aa70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.73
+      value: -0.98
       objectReference: {fileID: 0}
     - target: {fileID: 8029650996661931840, guid: 354fb1d98c09e374ca914ae1ade6aa70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3842,7 +3842,7 @@ MonoBehaviour:
   puntos: 0
   vidas: 3
   nivelActual: 1
-  nivelMasAlto: 2
+  nivelMasAlto: 3
 --- !u!4 &1977402186
 Transform:
   m_ObjectHideFlags: 0
@@ -3870,7 +3870,7 @@ GameObject:
   - component: {fileID: 2033436332}
   - component: {fileID: 2033436331}
   m_Layer: 5
-  m_Name: GameOverText
+  m_Name: FinText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3916,7 +3916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over
+  m_text: Fin
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4191,11 +4191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.683424
+      value: 18.41
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0130798
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4249,11 +4249,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 519420032, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.897094
+      value: 6.1046457
       objectReference: {fileID: 0}
     - target: {fileID: 519420032, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0015300512
+      value: 0.0015000105
       objectReference: {fileID: 0}
     - target: {fileID: 1713588299604222812, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_Name
@@ -4368,6 +4368,10 @@ PrefabInstance:
       propertyPath: HUD
       value: 
       objectReference: {fileID: 227995841}
+    - target: {fileID: 8697574406767607967, guid: ce6b3443db4c5a547bc3c38ca7fbb2ce, type: 3}
+      propertyPath: texto
+      value: 
+      objectReference: {fileID: 2033436331}
     - target: {fileID: 8697574406767607967, guid: ce6b3443db4c5a547bc3c38ca7fbb2ce, type: 3}
       propertyPath: prefabKey
       value: 

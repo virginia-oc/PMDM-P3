@@ -3276,11 +3276,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 519420032, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.914077
+      value: 5.880778
       objectReference: {fileID: 0}
     - target: {fileID: 519420032, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.005280018
+      value: -0.003700018
       objectReference: {fileID: 0}
     - target: {fileID: 1713588299604222812, guid: 1b8463288d2ccdb4b9b48222e61d46b0, type: 3}
       propertyPath: m_Name
@@ -3383,10 +3383,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8697574406767607966, guid: ce6b3443db4c5a547bc3c38ca7fbb2ce, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 8697574406767607966, guid: ce6b3443db4c5a547bc3c38ca7fbb2ce, type: 3}
       propertyPath: m_Name
       value: GameController

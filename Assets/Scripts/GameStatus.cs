@@ -31,4 +31,9 @@ public class GameStatus : MonoBehaviour
     {
         
     }
+
+    private void Destructor()
+    {
+        Destroy(gameObject);
+    }
 }

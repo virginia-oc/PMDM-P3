@@ -238,7 +238,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1713588299604222812}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 0f5cb80c1da4c7a489eef265922fffd9, type: 2}
+  m_Material: {fileID: 6200000, guid: d912236491f26a44698a330b6a946126, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 2
-  velocidadSalto: 1.5
+  velocidadSalto: 2
 --- !u!95 &8416056713340485899
 Animator:
   serializedVersion: 4

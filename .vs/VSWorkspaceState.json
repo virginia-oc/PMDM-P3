@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Assets",
+    "\\Assets\\Scripts"
   ],
-  "SelectedNode": "\\Práctica3.sln",
+  "SelectedNode": "\\Assets\\Scripts\\Coin.cs",
   "PreviewInSolutionExplorer": false
 }

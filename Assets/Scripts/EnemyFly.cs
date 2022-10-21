@@ -13,7 +13,7 @@ public class EnemyFly : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        velocidad = 2;
+        velocidad = 1f + FindObjectOfType<GameStatus>().nivelActual;
         siguientePosicion = wayPoints[0].position;
     }
 

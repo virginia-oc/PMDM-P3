@@ -654,7 +654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292125107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7, y: -2.88, z: 0}
+  m_LocalPosition: {x: -2.11, y: -1.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1139,7 +1139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911400055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.15, y: -1.6, z: 0}
+  m_LocalPosition: {x: -6.15, y: 0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1316,7 +1316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998394232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.72, y: -2.89, z: 0}
+  m_LocalPosition: {x: -6.27, y: -2.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1409,7 +1409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225473018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.45, y: 0.63, z: -0.005806596}
+  m_LocalPosition: {x: 5.45, y: 2.86, z: -0.005806596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3841,7 +3841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puntos: 0
   vidas: 3
-  nivelActual: 1
+  nivelActual: 3
   nivelMasAlto: 3
 --- !u!4 &1977402186
 Transform:
@@ -3893,7 +3893,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -105.26, y: 48.7}
+  m_AnchoredPosition: {x: -164.4, y: 48.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033436331
@@ -3979,7 +3979,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -228.63147, w: 0}
+  m_margin: {x: 0, y: 0, z: -321.80255, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4191,11 +4191,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.41
+      value: 18.45
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.97
+      value: -2.37
       objectReference: {fileID: 0}
     - target: {fileID: 636609189733423276, guid: 6fb8b7c492c12ce41bac04a736eb76db, type: 3}
       propertyPath: m_LocalPosition.z

@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour
         texto.text = "Game Over";
         HUD.text = "Puntos: " + puntos + "\n" +
             "Vidas: " + vidas;
-        prefabKey.GetComponent<SpriteRenderer>().enabled = false;       
+        prefabKey.GetComponent<SpriteRenderer>().enabled = false;   
     }
 
     // Update is called once per frame
@@ -41,7 +41,15 @@ public class GameController : MonoBehaviour
         
         if (itemsRestantes <= 0)
         {
-            prefabKey.GetComponent<SpriteRenderer>().enabled = true;          
+            if (SceneManager.GetActiveScene().name == "Level3")
+            {
+                AvanzarNivel();
+            }
+            else
+            {
+                prefabKey.GetComponent<AudioSource>().Play();
+                prefabKey.GetComponent<SpriteRenderer>().enabled = true;
+            }                  
         }
 
         HUD.text = "Puntos: " + puntos + "\n" +
@@ -64,14 +72,12 @@ public class GameController : MonoBehaviour
     }
 
     private void AvanzarNivel()
-    {
-        Debug.Log(nivelActual);
+    {      
         nivelActual++;
-        Debug.Log(nivelActual);
-        Debug.Log(FindObjectOfType<GameStatus>().nivelMasAlto);
+       
         if (nivelActual > FindObjectOfType<GameStatus>().nivelMasAlto)
         {
-            texto.text = "Fin";
+            texto.text = "Fin \n Puntuación obtenida: " + puntos;
             nivelActual = 1;
             TerminarPartida();
         }
